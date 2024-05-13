@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<html lang="en"></html>
+<link rel="stylesheet" href="styles.css">
 <html>
     <body>
         <h1 id="title">Survey Form</h1>
         <p id="description">A form for gathering information. </p>
         <form id="survey-form"> 
-            <input id="name" type="text" required >Your Name 
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Type Your Name Here" required >
             <input type="email" id="email"  required>Your Email 
             <input type="number" id="number" min="1" max="120" >Age
             <input type="submit">
