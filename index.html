@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <link rel="stylesheet" href="styles.css">
+
+</html>
 <html>
-    <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">A form for gathering information. </p>
-        <form id="survey-form"> 
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A form for gathering information. </p>
+    <form id="survey-form">
+        <div class="centerdiv">
+
             <label for="name" id="name-label">Name</label>
-            <input id="name" type="text" placeholder="Type Your Name Here" required >
-            <input type="email" id="email"  required>Your Email 
-            <input type="number" id="number" min="1" max="120" >Age
+            <input id="name" type="text" placeholder="Type Your Name Here" required>
+        </div>
+
+        <div class="centerdiv">
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Type Your Email Here" required>
+        </div>
+
+        <div class="centerdiv">
+
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" min="1" max="120" placeholder="Type Age Here">
+
+        </div>
+        <div class="centerdiv">
+            <label for="role">Enter your current role here</label>
+            <select type="dropdown" id="role">
+                <option valu="">Select current role</option>
+
+                <!--Available Options-->
+                <option value="student">Student</option>
+                <option value="full-time Job">Full-time Job</option>
+                <option value="prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="centerdiv">
             <input type="submit">
-        </form>
-    </body>
+        </div>
+
+    </form>
+</body>
+
 </html>
